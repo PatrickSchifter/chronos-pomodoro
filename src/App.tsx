@@ -1,10 +1,12 @@
+import { Heading } from './components/Heading';
+
 import './styles/theme.css';
 import './styles/global.css';
 
 export function App() {
   return (
     <>
-      <h1>Parágrafo</h1>
+      <Heading>Paragrafo</Heading>
       <h1>This is APP.tsx</h1>
     </>
   );
