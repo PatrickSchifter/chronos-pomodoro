@@ -1,12 +1,30 @@
-.container-logo {
-  color: var(--primary);
+.logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-top: 3.2rem;
 }
 
-.logo {
-  padding: 5px;
-  width: 40px;
-  height: 40px;
+.logoLink {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.logoLink:hover {
+  filter: brightness(70%);
+}
+
+.logoLink svg {
+  width: 6.4rem;
+  height: 6.4rem;
 }

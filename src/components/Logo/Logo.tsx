@@ -1,12 +1,13 @@
-import { Heading } from '../Heading/Heading';
-import styles from './index.module.css';
 import { TimerIcon } from 'lucide-react';
+import styles from './Logo.module.css';
 
 export function Logo() {
   return (
-    <div className={styles['container-logo']}>
-      <TimerIcon className={styles.logo} />
-      <Heading>Cronos</Heading>
+    <div className={styles.logo}>
+      <a className={styles.logoLink} href='#'>
+        <TimerIcon />
+        <span>Chronos</span>
+      </a>
     </div>
   );
 }
