@@ -4,11 +4,12 @@ import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
+import { Footer } from './components/Footer';
+import { DefaultInput } from './components/DefaultInput';
+import { PlayCircleIcon } from 'lucide-react';
 
 import './styles/theme.css';
 import './styles/global.css';
-import { DefaultInput } from './components/DefaultInput';
-import { PlayCircleIcon } from 'lucide-react';
 
 export function App() {
   return (
@@ -44,6 +45,9 @@ export function App() {
             <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );
