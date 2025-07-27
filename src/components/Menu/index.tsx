@@ -12,7 +12,9 @@ export function Menu() {
     return (localStorage.getItem('theme') as AvalableThemes) || 'dark';
   });
 
-  const handleThemeToggle = (event: React.MouseEvent) => {
+  const handleThemeToggle = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  ) => {
     event.preventDefault();
     setTheme(prevTheme => {
       const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
