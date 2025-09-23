@@ -1,9 +1,8 @@
-import { createContext } from 'react';
 import type { TaskStateModel } from '../../models/TaskStateModel';
 
-const initialState: TaskStateModel = {
+export const initialTaskState: TaskStateModel = {
   tasks: [],
-  secondasRemaining: 0,
+  secondsRemaining: 0,
   activeTask: null,
   formattedSecondsRemaining: '00:00',
   config: {
@@ -13,5 +12,3 @@ const initialState: TaskStateModel = {
   },
   currentCycle: 0,
 };
-
-export const TaskContext = createContext(initialState);
